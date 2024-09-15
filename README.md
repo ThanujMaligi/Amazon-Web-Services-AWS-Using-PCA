@@ -1,4 +1,5 @@
 **So here is the overview of this project**
+__USING MATLAB__
 
 Import data from an Excel spreadsheet, process it, and perform a Principal Component Analysis (PCA) to reduce the dimensionality of the data. The script starts by setting up the import options for the spreadsheet, specifying the sheet, data range, column names, and variable types. It imports the data from "Sheet1" of the Excel file and ensures that numerical variables (such as sales, quantity, discount, and profit) are normalized to a range between 0 and 1 for uniformity. Afterward, categorical variables (like order ID and country) are converted to categorical data types for easier handling.
 
