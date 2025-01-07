@@ -1,6 +1,13 @@
-**So here is the overview of this project**
-__USING MATLAB__
+## 🌟 Overview of the Project
 
-Import data from an Excel spreadsheet, process it, and perform a Principal Component Analysis (PCA) to reduce the dimensionality of the data. The script starts by setting up the import options for the spreadsheet, specifying the sheet, data range, column names, and variable types. It imports the data from "Book2" of the Excel file and ensures that numerical variables (such as sales, quantity, discount, and profit) are normalized to a range between 0 and 1 for uniformity. Afterward, categorical variables (like order ID and country) are converted to categorical data types for easier handling.
+This project demonstrates how to **import, process, and analyze data** using MATLAB, focusing on **Principal Component Analysis (PCA)** for dimensionality reduction.
 
-Once the data is imported, normalized, and categorized, the script proceeds to compute the covariance matrix of the numerical variables. PCA is performed by calculating the eigenvalues and eigenvectors of the covariance matrix, which represent the directions of maximum variance in the data. The eigenvalues are sorted in descending order, and the top two eigenvectors (principal components) are selected to form a feature vector. The centered data (after subtracting the mean) is projected onto these principal components, reducing the dimensionality. The script then visualizes the recast data in a scatter plot along the two principal components. Additionally, a loading plot is generated to show how each original variable (sales, quantity, discount, and profit) contributes to the first two principal components, allowing for easier interpretation of the data.
+The data is imported from an **Excel spreadsheet** (`Book2`), with the import options specifying the sheet name, data range, column names, and variable types. Numerical variables such as sales, quantity, discount, and profit are normalized to a range of `0 to 1` for uniformity. Categorical variables like order ID and country are converted to `categorical data types` for easier handling.
+
+After importing and preparing the data, the script computes the **covariance matrix** of the numerical variables. PCA is performed by calculating **eigenvalues** and **eigenvectors** from the covariance matrix. The eigenvalues are sorted in descending order to determine the **principal components**, and the top two eigenvectors are selected for dimensionality reduction. The centered data (mean-subtracted) is then projected onto these principal components.
+
+For visualization, a **scatter plot** is generated to display the data along the first two principal components. Additionally, a **loading plot** highlights how the original variables (sales, quantity, discount, profit) contribute to the principal components, enabling easier interpretation of the results.
+
+---
+
+🎯 This project offers a comprehensive demonstration of **data preprocessing** and **dimensionality reduction**, making it a valuable tool for analyzing real-world datasets.
